@@ -1,0 +1,80 @@
+<div class="container-fluid">
+  <div class="row row-blue">
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <span *ngIf="currentRoute === 'new'"><h3><i class="zmdi zmdi-plus"></i> Create A New Poll</h3></span>
+      <span *ngIf="currentRoute === 'edit'"><h3><i class="zmdi zmdi-floppy"></i> Add Poll Options</h3></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 vertical-center">
+      <form [formGroup]="fbForm" novalidate (ngSubmit)="save(fbForm)">
+
+        <div class="form-group">
+          <textarea rows="2" class="form-control" formControlName="question" placeholder="Question"></textarea>
+          <small class="text-danger" [hidden]="fbForm.controls.question.valid
+             || (fbForm.controls.question.pristine && !submitted)">
+              Question is required (minimum 6 characters).
+          </small>
+        </div>
+
+        <div *ngIf="currentRoute === 'edit'">
+          <div *ngFor="let option of staticOptions">
+            <div class="form-group">
+              <input type="text" class="form-inline form-control"  value="{{option}}" disabled>
+            </div>
+          </div>
+        </div>
+
+        <div formArrayName="options">
+          <div *ngFor="let option of fbForm.controls.options.controls; let i=index">
+            <!-- Angular assigns array index as group name by default 0, 1, 2, ... -->
+            <div [formGroupName]="i" class="form-group">
+              <input type="hidden" formControlName="votes">
+              <input type="text" class="form-inline form-control" formControlName="option" placeholder="Option">
+              <!-- Enable Remove button when more than 2 options exist -->
+              <span *ngIf="fbForm.controls.options.controls.length > minOptions">
+                <button type='button' class="btn btn-sm btn-danger" (click)="removeOption(i)">-</button>
+              </span>
+              <span *ngIf="fbForm.controls.options.controls.length <= minOptions">
+                <button type='button' class="btn btn-sm btn-secondary disabled">-</button>
+              </span>
+              <!-- Invalid option error message -->
+              <small class="text-danger" 
+                [hidden]="fbForm.controls.options.controls[i].controls.option.valid
+                || (fbForm.controls.options.controls[i].controls.option.pristine && !submitted)">
+                Option is not valid
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <div class="add-options text-right">
+          <button type='button' class="btn btn-sm btn-primary" (click)='addOption()'>+ Add Option</button>
+        </div>
+
+        <button type='button' class="btn btn-md btn-outline-secondary" [routerLink]="['/av/my-polls']"><i class="zmdi zmdi-arrow-left"></i></button>
+        <button type='button' class="btn btn-md btn-outline-success" type="submit" [disabled]="!fbForm.valid">
+          <span *ngIf="currentRoute === 'new'"><i class="zmdi zmdi-plus"></i></span>
+          <span *ngIf="currentRoute === 'edit'"><i class="zmdi zmdi-floppy"></i></span>
+        </button>
+      </form>
+    </div>
+
+    <div class="col-sm-6">
+      <div *ngIf="!chartEmpty">
+        <doughnut [doughnutChartLabels]="chartLabels"
+          [doughnutChartData]="chartData" [doughnutChartAnimation]="false">
+          <i class="zmdi zmdi-spinner zmdi-blue zmdi-hc-spin"></i>
+        </doughnut>
+      </div>
+      <div class="text-center empty-chart" *ngIf="chartEmpty">
+        <h4>Add options</h4>
+        <h4>to generate a poll</h4>
+      </div>
+    </div>
+  </div>
+</div>

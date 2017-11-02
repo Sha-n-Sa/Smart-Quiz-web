@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Smart Quiz</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+</head>
+<body>
+  <app-root> <!-- Loading Animation -->
+    <div class="text-center" style="padding-top: 100px; color: #0092e2">
+      <i class="zmdi zmdi-spinner zmdi-blue zmdi-hc-spin"></i>
+    </div>
+  </app-root>
+  
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCc9qIvgzEFfus79D9SwkALe8N1sPZUpSw",
+    authDomain: "smart-quiz-123.firebaseapp.com",
+    databaseURL: "https://smart-quiz-123.firebaseio.com",
+    projectId: "smart-quiz-123",
+    storageBucket: "smart-quiz-123.appspot.com",
+    messagingSenderId: "1088377354283"
+  };
+  firebase.initializeApp(config);
+</script>
+
+ </body>
+</html>
