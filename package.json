@@ -28,7 +28,7 @@
     "bootstrap-material-design": "https://github.com/cjsheets/bootstrap-material-design/tarball/dist-cjs",
     "chart.js": "^2.4.0",
     "core-js": "^2.4.1",
-    "firebase": "^3.6.4",
+    "firebase": "^3.9.0",
     "ng2-charts": "^1.4.4",
     "raven-js": "^3.9.1",
     "rxjs": "5.0.0-beta.12",

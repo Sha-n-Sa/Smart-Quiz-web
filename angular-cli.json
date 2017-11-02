@@ -46,6 +46,9 @@
     }
   },
   "defaults": {
+    "serve": {
+      "port": 4202
+    },
     "styleExt": "css",
     "prefixInterfaces": false,
     "inline": {

@@ -1,11 +1,12 @@
 import { AngularFireModule, AuthMethods, AuthProviders } from "angularfire2";
 
 export const afConfig = {
-  apiKey: "AIzaSyCOm8FwfjmIjHqLwpKvMfDCvrv1e58Tkt4",
-  authDomain: "fcc-chadsheets-com.firebaseapp.com",
-  databaseURL: "https://fcc-chadsheets-com.firebaseio.com",
-  storageBucket: "fcc-chadsheets-com.appspot.com",
-  messagingSenderId: "487755790032"
+  	apiKey: "AIzaSyCc9qIvgzEFfus79D9SwkALe8N1sPZUpSw",
+	authDomain: "smart-quiz-123.firebaseapp.com",
+	databaseURL: "https://smart-quiz-123.firebaseio.com",
+	projectId: "smart-quiz-123",
+	storageBucket: "smart-quiz-123.appspot.com",
+	messagingSenderId: "1088377354283"
 };
 
 export const afAuthConfig = {
