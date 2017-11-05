@@ -12,6 +12,8 @@ import { NavbarModule } from './navbar/navbar.module';
 import { FirebaseDbService } from './shared/firebase-db.service';
 
 import { AppRoutingModule, routedComponents } from './routing.module';
+//import { FeedbackComponent } from './feedback/feedback.component';
+
 
 @NgModule({
   imports: [
@@ -23,7 +25,9 @@ import { AppRoutingModule, routedComponents } from './routing.module';
     AppRoutingModule
   ],
   declarations: [
-    routedComponents
+    routedComponents,
+   // FeedbackComponent,
+
   ],
   providers: [
     FirebaseDbService

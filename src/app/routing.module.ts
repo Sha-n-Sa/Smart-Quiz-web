@@ -3,10 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-
+import { FeedbackComponent } from './feedback/feedback.component';
 import { AdminComponent } from './admin/admin.component';
 import { PollsComponent } from './polls/polls.component';
 import { VoteComponent } from './vote/vote.component';
+
+
 
 // Save space in the root module, export components here
 export const routedComponents = [
@@ -14,7 +16,9 @@ export const routedComponents = [
   WelcomeComponent,
   PollsComponent,
   VoteComponent,
-  AdminComponent
+  AdminComponent,
+  FeedbackComponent
+
 ];
 
 const routes: Routes = [
@@ -24,6 +28,10 @@ const routes: Routes = [
   { path: 'av/new', component: AdminComponent },
   { path: 'av/edit/:rid/:pid', component: AdminComponent },
   { path: 'av', component: WelcomeComponent },
+  { path: 'av/feedback', component: FeedbackComponent },
+
+
+ 
   { path: '**', redirectTo: 'av', pathMatch: 'full' }
 ];
 
