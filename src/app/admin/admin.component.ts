@@ -68,7 +68,9 @@ export class AdminComponent implements OnInit, OnDestroy {
 
   getPollList(): void { // This should be done by FireDb
     this.pollList$ = this.af.database.list('/voteApp/polls', {query: {limitToLast: 1}});
+    console.log("polls:"+this.pollList$);
     this.resultList$ = this.af.database.list('/voteApp/results', {query: {limitToLast: 1}});
+    console.log("results:"+this.resultList$);
   }
 
   getPollData(): void {

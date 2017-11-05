@@ -36,7 +36,7 @@
     Sign Up
   </button> &nbsp; &nbsp;
 </div>
-<div class="jumbotron jumbotron-fluid jumbotron-gray text-center" *ngIf="(_auth.af.auth | async) && !(_auth.af.auth | async)?.anonymous">
+<div class="jumbotron jumbotron-fluid jumbotron-gray text-center" *ngIf="(_auth.af.auth | async) || !(_auth.af.auth | async)?.anonymous">
   <p class="lead lead-heading">Manage Your Questions</p>
   <button class="btn btn-lg btn-success" [routerLink]="['/av/my-polls']">
     My Polls

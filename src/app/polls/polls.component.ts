@@ -40,6 +40,8 @@ export class PollsComponent implements OnInit {
       if(this.currentRoute == 'polls'){
         //this._log['log']('PollsComponent :: ngOnInit()')
         this.pollList$ = this._FireDb.getPolls();
+        console.log("polls:"+this.pollList$);
+        console.log("polls:"+this.pollList$[0]);
         this.setupPolls();
 
       } else { // Route: my-polls
