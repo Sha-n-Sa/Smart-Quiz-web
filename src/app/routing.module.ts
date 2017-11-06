@@ -16,15 +16,15 @@ import { ProgressComponent } from './progress/progress.component';
 // Save space in the root module, export components here
 export const routedComponents = [
   AppComponent,
+  HomeComponent,
   WelcomeComponent,
   PollsComponent,
   VoteComponent,
   AdminComponent,
   FeedbackComponent,
   StudentComponent,
-  ProgressComponent,
-  HomeComponent
-
+  ProgressComponent
+ 
 ];
 
 const routes: Routes = [

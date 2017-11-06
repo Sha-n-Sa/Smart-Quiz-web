@@ -1,11 +1,11 @@
 <div class="jumbotron jumbotron-fluid jumbotron-blue text-center">
   <h1 class="display-4">Smart Quiz</h1>
   <p class="lead">Smart quizzes with live results.</p>
-  <button class="btn btn-lg btn-success" [routerLink]="['/av'/welcome]">
+  <button class="btn btn-lg btn-success" [routerLink]="['/av/welcome']">
    Lecturer
-  </button>  <br> 
-  <br> 
-  <button class="btn btn-lg btn-success" [routerLink]="['av/student']">
+  </button>  <br> <br>
+
+  <button class="btn btn-lg btn-success" [routerLink]="['/av/student']">
     Student 
   </button>
 </div>
@@ -34,7 +34,7 @@
   </div>
 </div> -->
 
-<div class="jumbotron jumbotron-fluid jumbotron-gray text-center" *ngIf="!(_auth.af.auth | async) || (_auth.af.auth | async)?.anonymous">
+<!-- <div class="jumbotron jumbotron-fluid jumbotron-gray text-center" *ngIf="!(_auth.af.auth | async) || (_auth.af.auth | async)?.anonymous">
   <p class="lead lead-heading">Create Custom Questions</p>
   <button class="btn btn-lg btn-success"  (click)="open(content)">
     Sign Up
@@ -45,7 +45,7 @@
   <button class="btn btn-lg btn-success" [routerLink]="['/av/my-polls']">
     My Polls
   </button> &nbsp; &nbsp;
-</div>
+</div> -->
 
 <!--<div class="container">
   <div class="row">
