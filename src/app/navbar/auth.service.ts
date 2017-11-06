@@ -65,7 +65,7 @@ export class AuthService {
     switch (provider){
       case 'Google': authProvider['provider'] = AuthProviders.Google; break;
       case 'Github': authProvider['provider'] = AuthProviders.Github; break;
-      case 'Facebook': authProvider['provider'] = AuthProviders.Facebook; break;
+     case 'Facebook': authProvider['provider'] = AuthProviders.Facebook; break;
       case 'Twitter': authProvider['provider'] = AuthProviders.Twitter; break;
       default: return '{}';
     }

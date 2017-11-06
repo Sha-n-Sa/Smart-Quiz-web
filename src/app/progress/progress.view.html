@@ -1,0 +1,45 @@
+<div class="container-fluid">
+  <div class="row row-blue">
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>{{question}}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 vertical-center">
+      <p *ngIf="alreadyVoted">
+        You've already voted on this poll.
+      </p>
+      <form [formGroup]="voteForm" novalidate (ngSubmit)="submitForm(voteForm)">
+        <fieldset [disabled]="alreadyVoted">
+          <ul class="options">
+            <li *ngFor="let option of options; let i = index">
+              <input type="radio" id="{{i}}" value="{{option.i}}" name="voteOption" formControlName="voteOption"
+                [checked]="option.option == alreadyVoted"/>
+              <label for="{{i}}" class="btn btn-sm btn-outline-primary">{{option.option}}</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button type='button' class="btn btn-md btn-outline-secondary" [routerLink]="['/av/polls']"><i class="zmdi zmdi-arrow-left"></i></button>
+        <button type='submit' class="btn btn-md btn-outline-success"
+          [disabled]="!voteForm.valid || alreadyVoted"><i class="zmdi zmdi-check"></i></button>
+      </form>
+    </div>
+
+    <div class="col-sm-6">
+      <div *ngIf="!chartEmpty">
+        <doughnut [doughnutChartLabels]="chartLabels" [doughnutChartData]="chartData">
+          <i class="zmdi zmdi-spinner zmdi-blue zmdi-hc-spin"></i>
+        </doughnut>
+      </div>
+      <div class="text-center empty-chart" *ngIf="chartEmpty">
+        <h4>No votes yet.</h4>
+        <h4>You can be the first!</h4>
+      </div>
+    </div>
+  </div>
+</div>

@@ -4,9 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { StudentComponent } from './student/student.component';
 import { AdminComponent } from './admin/admin.component';
 import { PollsComponent } from './polls/polls.component';
 import { VoteComponent } from './vote/vote.component';
+import { ProgressComponent } from './progress/progress.component';
 
 
 
@@ -17,7 +19,9 @@ export const routedComponents = [
   PollsComponent,
   VoteComponent,
   AdminComponent,
-  FeedbackComponent
+  FeedbackComponent,
+  StudentComponent,
+  ProgressComponent
 
 ];
 
@@ -29,6 +33,9 @@ const routes: Routes = [
   { path: 'av/edit/:rid/:pid', component: AdminComponent },
   { path: 'av', component: WelcomeComponent },
   { path: 'av/feedback', component: FeedbackComponent },
+  { path: 'av/student', component: StudentComponent },
+  { path: 'av/progress/:id', component: ProgressComponent},
+
 
 
  
