@@ -10,6 +10,7 @@ import { SharedModule } from './shared/shared.module';
 import { AppComponent } from './app.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { FirebaseDbService } from './shared/firebase-db.service';
+import { NavbarService } from './navbar/navbar.service';
 
 import { AppRoutingModule, routedComponents } from './routing.module';
 //import { FeedbackComponent } from './feedback/feedback.component';
@@ -30,7 +31,8 @@ import { AppRoutingModule, routedComponents } from './routing.module';
 
   ],
   providers: [
-    FirebaseDbService
+    FirebaseDbService,
+    NavbarService
   ],
   bootstrap: [AppComponent]
 })
