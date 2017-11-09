@@ -13,6 +13,7 @@ import { FirebaseDbService } from './shared/firebase-db.service';
 import { NavbarService } from './navbar/navbar.service';
 
 import { AppRoutingModule, routedComponents } from './routing.module';
+import { ChartsModule } from 'ng2-charts';
 //import { FeedbackComponent } from './feedback/feedback.component';
 
 
@@ -23,7 +24,8 @@ import { AppRoutingModule, routedComponents } from './routing.module';
     NavbarModule,
     SharedModule,
     MasonryModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartsModule
   ],
   declarations: [
     routedComponents,

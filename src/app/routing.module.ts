@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { FirstpageComponent } from './firstpage/firstpage.component';
 import { HomeComponent } from './home/home.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { ResultsfeedComponent } from './resultsfeed/resultsfeed.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { StudentComponent } from './student/student.component';
 import { AdminComponent } from './admin/admin.component';
@@ -20,6 +21,7 @@ export const routedComponents = [
   FirstpageComponent,
   HomeComponent,
   WelcomeComponent,
+  ResultsfeedComponent,
   PollsComponent,
   VoteComponent,
   AdminComponent,
@@ -40,7 +42,9 @@ const routes: Routes = [
   { path: 'av/student', component: StudentComponent },
   { path: 'av/progress/:id', component: ProgressComponent},
   { path: 'av/home', component: HomeComponent},
-   { path: 'av', component: FirstpageComponent},
+  { path: 'av', component: FirstpageComponent},
+  { path: 'av/resultsfeed', component: ResultsfeedComponent},
+
 
 
  

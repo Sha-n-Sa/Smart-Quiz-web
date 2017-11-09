@@ -1,14 +1,15 @@
-h3 {
+/*h3 {
   font-weight: 300;
 }
 .jumbotron-blue {
   background: #0092e2;
   color: #FFFFFF;
-   background-size: cover; 
+ 
+  background-size: cover; 
  height: 100%;
  width: 100%;
-  padding: 3rem 2rem
 }
+
 .jumbotron-gray {
   background: #EFEFEF;
   color: #333333;
@@ -37,8 +38,4 @@ h3 {
 }
 .zmdi-cloud-outline {
   color:#acacac;
-}
-
-body.firstpage #navbar-top {
-   display: none !important;
- }
+}*/
