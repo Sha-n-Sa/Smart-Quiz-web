@@ -4,8 +4,12 @@ h3 {
 .jumbotron-blue {
   background: #0092e2;
   color: #FFFFFF;
-  padding: 3rem 2rem
+ /* padding: 3rem 2rem*/
+  background-size: cover; 
+ height: 100%;
+ width: 100%;
 }
+
 .jumbotron-gray {
   background: #EFEFEF;
   color: #333333;

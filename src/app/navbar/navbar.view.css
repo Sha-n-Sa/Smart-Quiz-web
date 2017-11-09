@@ -1,6 +1,15 @@
 .navbar-right {
   padding-right: 20px;
+  list-style-type: none;
 }
 .navbar-left {
   padding-left: 20px;
+  
 }
+ .navbar ul {
+	list-style-type: none;
+ }
+
+  .navbar li {
+	list-style-type: none;
+ }

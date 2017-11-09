@@ -2,15 +2,18 @@ import { Component } from '@angular/core';
 
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 import { Logger } from '../shared/logger.service';
-//import { AuthService } from '../navbar/auth.service';
+import { AuthService } from '../navbar/auth.service';
 
 @Component({
-  selector: 'student',
-  templateUrl: './student.view.html',
-  styleUrls: ['./student.view.css'],
+  selector: 'firstpage',
+  templateUrl: './firstpage.view.html',
+  styleUrls: ['./firstpage.view.css'],
 })
-export class StudentComponent { 
-/*  closeResult: string;
+
+
+export class FirstpageComponent { 
+  
+/*closeResult: string;
 
   constructor(
     private modalService: NgbModal,

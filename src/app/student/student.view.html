@@ -1,26 +1,49 @@
+
 <div class="jumbotron jumbotron-fluid jumbotron-blue text-center">
   <h1 class="display-4">Smart Quiz</h1>
   <p class="lead">Smart quizzes with live results.</p>
  <br> 
-
-<form>
+ <!-- <img src="../../assets/img/school.jpg"> -->
+<!-- <form>
   <div class="form-group">
     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Your Question Code">
-  </div>
-</form>
 
-<!-- 
-<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <input matInput placeholder="Favorite food" value="Sushi">
-  </mat-form-field>
-</form>
- -->
+    &nbsp; &nbsp;
+
   <button class="btn btn-lg btn-success" [routerLink]="['/av/polls']">
    Submit
-  </button>  &nbsp; &nbsp;&nbsp; 
+  </button>
+  </div>   
+</form>  -->
+ <div class="input-group">
+      <input type="text" class="form-control" placeholder="Enter Question Tag">
+      <span class="input-group-btn">
+       <button type="button" class="btn btn-secondary" [routerLink]="['/av/polls']"><h2>GO </h2></button>
+      </span>  <br> 
+    </div>
+  
+
+<br> <br>
+
+<p class="lead lead-heading">Give a Feedback to your Lecturer</p>
+  
+  <button class="btn btn-lg btn-success" [routerLink]="['/av/feedback']">
+    Feedbacks
+  </button>
+
+
 
 </div>
+
+<!-- <div class="jumbotron jumbotron-fluid jumbotron-gray text-center" >
+
+  <p class="lead lead-heading">Manage Your Questions</p>
+  <button class="btn btn-lg btn-success" [routerLink]="['/av/my-polls']">
+    My Polls
+  </button> &nbsp; &nbsp;
+</div> -->
+
+
 
  <!--<button class="btn btn-lg btn-success" [routerLink]="['/av/feedback']">
     Feedbacks

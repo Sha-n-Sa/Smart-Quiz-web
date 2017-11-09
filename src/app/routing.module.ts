@@ -2,6 +2,7 @@ import { NgModule }             from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { FirstpageComponent } from './firstpage/firstpage.component';
 import { HomeComponent } from './home/home.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { FeedbackComponent } from './feedback/feedback.component';
@@ -16,6 +17,7 @@ import { ProgressComponent } from './progress/progress.component';
 // Save space in the root module, export components here
 export const routedComponents = [
   AppComponent,
+  FirstpageComponent,
   HomeComponent,
   WelcomeComponent,
   PollsComponent,
@@ -37,8 +39,8 @@ const routes: Routes = [
   { path: 'av/feedback', component: FeedbackComponent },
   { path: 'av/student', component: StudentComponent },
   { path: 'av/progress/:id', component: ProgressComponent},
-   { path: 'av', component: HomeComponent},
-
+  { path: 'av/home', component: HomeComponent},
+   { path: 'av', component: FirstpageComponent},
 
 
  
