@@ -42,3 +42,11 @@ h3 {
 body.firstpage #navbar-top {
    display: none !important;
  }
+
+ .navbar ul {
+  list-style-type: none;
+ }
+
+  .navbar li {
+  list-style-type: none;
+ }

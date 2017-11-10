@@ -12,9 +12,11 @@ import { Poll } from '../shared/interface/poll.interface';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription }   from 'rxjs/Subscription';
 
+
 @Component({
   selector: 'admin',
   templateUrl: './admin.view.html',
+   styleUrls: ['./admin.view.css'],
 })
 export class AdminComponent implements OnInit, OnDestroy { 
   private recordID = {};  // {poll: .., result: ..}

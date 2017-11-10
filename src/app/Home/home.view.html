@@ -1,3 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+  <a class="navbar-brand" href=""[routerLink]="['/av/home']">Smart Quiz</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+ <ul class="navbar-nav mr-auto" style="none">
+      <li class="nav-item active">
+        <a class="nav-link" href="" [routerLink]="['/av']"> Home <span class="sr-only">(current)</span></a>
+
+      </li>
+
+      <ul class="navbar-nav mr-auto" style="none">
+      <li class="nav-item active">
+        <a class="nav-link" href="" [routerLink]="['/av/polls']"> Answer Question <span class="sr-only">(current)</span></a>
+
+      </li>
+   </ul>
+
+   </ul>
+    
+    
+
+     <li>  
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-outline-primary" type="button">Go!</button>
+      </span>
+      &nbsp; &nbsp;
+      <!--   <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Login</button> -->
+   
+    </div>
+     
+     </li>
+  
+
+
+      </div>   
+    
+</nav>
 
 
 <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -50,7 +93,7 @@
 <div class="jumbotron jumbotron-fluid jumbotron-blue text-center">
   <h1 class="display-4">Smart Quiz</h1>
   <p class="lead">Smart quizzes with live results.</p>
-  <button class="btn btn-lg btn-success" [routerLink]="['/av/welcome']">
+  <button class="btn btn-lg btn-success" [routerLink]="['/av/newlogin']">
    Lecturer
   </button>  &nbsp; &nbsp; &nbsp; 
 

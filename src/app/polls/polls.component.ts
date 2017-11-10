@@ -12,7 +12,8 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'polls',
-  templateUrl: './polls.view.html'
+  templateUrl: './polls.view.html',
+   styleUrls: ['./polls.view.css'],
 })
 export class PollsComponent implements OnInit { 
   private currentRoute: string;

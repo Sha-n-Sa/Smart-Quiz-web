@@ -1,4 +1,4 @@
-/*h3 {
+h3 {
   font-weight: 300;
 }
 .jumbotron-blue {
@@ -38,4 +38,12 @@
 }
 .zmdi-cloud-outline {
   color:#acacac;
-}*/
+}
+
+.navbar ul {
+  list-style-type: none;
+ }
+
+.navbar li {
+  list-style-type: none;
+ }

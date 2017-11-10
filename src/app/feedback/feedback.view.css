@@ -35,3 +35,11 @@ h3 {
 .zmdi-cloud-outline {
   color:#acacac;
 }
+
+.navbar ul {
+  list-style-type: none;
+ }
+
+.navbar li {
+  list-style-type: none;
+ }

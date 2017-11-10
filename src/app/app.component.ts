@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
-import { AuthService } from './navbar/auth.service';
+/*import { AuthService } from './navbar/auth.service'; */
 import { Logger } from './shared/logger.service';
 
 
@@ -12,9 +12,9 @@ import { Logger } from './shared/logger.service';
 export class AppComponent implements OnInit {
 
   constructor(
-    private af: AngularFire,
+    /*private af: AngularFire,
     private _auth: AuthService,
-    private _log: Logger
+    private _log: Logger*/
   ) {}
 
 

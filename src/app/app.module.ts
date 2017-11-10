@@ -38,4 +38,8 @@ import { ChartsModule } from 'ng2-charts';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+
+
+ }
