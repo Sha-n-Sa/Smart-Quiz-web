@@ -6,9 +6,7 @@ This app allows users to vote anonomously on polls, login using social credentia
 and manage their polls. The client leverages Chart.js, Angular v2.x and Typescript tied to a Firebase real-time 
 authentication engine and datastore using [AngularFire2](https://github.com/angular/angularfire2).
 
-A demo version of this app is deployed at: [https://fcc-chadsheets-com.firebaseapp.com/av](https://fcc-chadsheets-com.firebaseapp.com/av)
 
-![](src/assets/img/app-screenshot.png?raw=true)
 
 User stories:
 
@@ -26,8 +24,8 @@ User stories:
 Clone this repository and install npm dependencies:
 
 ```
-git clone git@github.com:cjsheets/angular-voting-app.git
-cd angular-voting-app
+git clone git@github.com:cjsheets/smart_quiz_web.git
+cd angular-smart_quiz_web
 npm install
 ```
 
@@ -54,38 +52,13 @@ This package contains:
 | ------- | ------- |
 | Angular v2.x | Firebase Auth |
 | AngularFire2 | Firebase Database |
-| RxJS | Firebase Hosting |
-| Charts.js | Firebase Test Lab |
+| Charts.js |  |
 | HTML5/CSS |  |
 | Webpack | |
 
 | Both | 
 | ------- |
 | Typescript |
-| Karma/Protractor | 
 
-### Testing
 
-* *Work in progress*
-
-#### unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-#### end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-### To-Do:
-
-* Perform transactions when adding/removing polls
-* Disable console log in production
-* enforce no duplicate options, causes issues.
-  * http://almerosteyn.com/2016/03/angular2-form-validation-component
-* Add Pagination
-* Improve transition effect when adding new poll
-* Add Route Guards
-* Check `viewing votes` when logged out in private browsing session
-* set maximum width for page elements
 
