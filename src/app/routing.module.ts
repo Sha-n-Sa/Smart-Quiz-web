@@ -22,6 +22,7 @@ export const routedComponents = [
   FirstpageComponent,
   HomeComponent,
   WelcomeComponent,
+  /*WelcomecopyComponent,*/
   NewloginComponent,
   ResultsfeedComponent,
   PollsComponent,
@@ -40,6 +41,7 @@ const routes: Routes = [
   { path: 'av/new', component: AdminComponent },
   { path: 'av/edit/:rid/:pid', component: AdminComponent },
   { path: 'av/welcome', component: WelcomeComponent },
+ /* { path: 'av/welcomecopy', component: WelcomecopyComponent },*/
   { path: 'av/feedback', component: FeedbackComponent },
   { path: 'av/student', component: StudentComponent },
   { path: 'av/progress/:id', component: ProgressComponent},

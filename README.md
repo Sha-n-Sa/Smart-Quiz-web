@@ -1,4 +1,4 @@
-# Voting App
+# SMART QUIZ 
 
 ## Overview
 
@@ -10,7 +10,7 @@ A demo version of this app is deployed at: [https://fcc-chadsheets-com.firebasea
 
 ![](src/assets/img/app-screenshot.png?raw=true)
 
-Part of the [FreeCodeCamp](https://www.freecodecamp.com/cjsheets) curriculum based on the following user stories:
+User stories:
 
 * As an authenticated user, I can keep my polls and come back later to access them.
 * As an authenticated user, I can share my polls with my friends.
@@ -89,8 +89,3 @@ Before running the tests make sure you are serving the app via `ng serve`.
 * Check `viewing votes` when logged out in private browsing session
 * set maximum width for page elements
 
-### License
-
-MIT License
-
-[![Analytics](https://cjs-beacon.appspot.com/UA-10006093-3/github/cjsheets/angular-voting-app?pixel)](https://github.com/cjsheets/angular-voting-app)
